@@ -1,0 +1,78 @@
+/* Estilos generales para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e4e4f9; /* Más oscuro como solicitaste */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la carga y errores */
+.loading, .error {
+    text-align: center;
+    font-size: 1.2em; /* Reducido para que los mensajes sean menos prominentes */
+    margin-top: 20px;
+}
+
+/* Contenedor principal */
+h1 {
+    text-align: center;
+    color: #5c5c8a;
+    margin: 20px 0;
+}
+
+/* Estilo de la lista de productos */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos para cada producto */
+div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin: 15px; /* Aumentado para más espacio entre productos */
+    padding: 15px; /* Aumentado para más separación interna */
+    width: 300px; /* Ajustado para un diseño más espacioso */
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 8px;
+    background-color: #fff; /* Fondo claro para contrastar con el fondo general */
+}
+
+.product-image {
+    width: 100px; /* Tamaño fijo para la imagen */
+    height: auto;
+    border-radius: 5px;
+    flex: 0 0 auto; /* No crece ni se encoge, tamaño fijo */
+    margin-right: 15px; /* Separación entre la imagen y el texto */
+}
+
+.product-details {
+    text-align: right; /* Alinea el texto a la derecha */
+    flex: 1; /* Toma el espacio restante */
+}
+
+.product-id, .product-name, .product-price, .product-quantity {
+    margin: 4px 0; /* Espaciado entre textos */
+}
+
+.product-name {
+    color: #333;
+    font-size: 1em; /* Reducido para uniformidad */
+    font-weight: bold;
+}
+
+.product-price {
+    color: #008000;
+    font-size: 0.9em; /* Reducido para un diseño más compacto */
+    font-weight: bold;
+}
+
+.product-quantity {
+    font-size: 0.8em; /* Reducido para un diseño más compacto */
+    color: #555;
+}
